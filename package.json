@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "tesseract.js": "^1.0.10",
     "weibo-crawler": "^0.1.3"
   }
 }
