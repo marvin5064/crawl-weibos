@@ -77,6 +77,7 @@ function crawlData(){
 
 function cleanObjects(kol, objects) {
     processedItems = []
+    console.log("processing", objects.length, "weibos for KOL", kol)
     for (var i in objects){
         item = objects[i]
         var createdAt = item.createdAt
@@ -84,7 +85,6 @@ function cleanObjects(kol, objects) {
         if (year < 2016 || !createdAt || createdAt.match(/[\u3400-\u9FBF]/)){
             continue
         }
-        console.log("createdAt", createdAt)
 
         var textDetails = item.text
         // skip if no text
